@@ -9,11 +9,18 @@
         VerticalOptions="Fill"
         Padding="20,20,20,20">
 
-        <Label Text="Welcome to HvacTools by Clawson Analytics" 
-           VerticalOptions="Start"
+        <Label Text="HVAC TOOLS" 
+           VerticalOptions="CenterAndExpand"
            HorizontalOptions="Center"
            TextColor="Navy"
             FontSize="Large"/>
+
+        <Button
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            Text="Start"
+            Font="Large">
+        </Button>
     </StackLayout>
     
 </ContentPage>
