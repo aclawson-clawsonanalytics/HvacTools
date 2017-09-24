@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:HvacTools.Mobile"
              x:Class="HvacTools.Mobile.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<Label Text="Welcome to HvacTools by Clawson Analytics, LLC!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 

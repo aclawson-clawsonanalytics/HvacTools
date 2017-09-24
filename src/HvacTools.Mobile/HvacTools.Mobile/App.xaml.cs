@@ -12,7 +12,7 @@ namespace HvacTools.Mobile
         public App()
         {
             InitializeComponent();
-
+            
             MainPage = new HvacTools.Mobile.MainPage();
         }
 
