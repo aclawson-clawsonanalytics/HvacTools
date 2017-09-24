@@ -19,7 +19,8 @@
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
             Text="Start"
-            Font="Large">
+            Font="Large"
+            Clicked="OnStartClick">
         </Button>
     </StackLayout>
     

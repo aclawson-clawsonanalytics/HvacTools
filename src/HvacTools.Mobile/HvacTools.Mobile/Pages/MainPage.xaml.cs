@@ -14,5 +14,10 @@ namespace HvacTools.Mobile
             InitializeComponent();
             
         }
+
+        async void OnStartClick()
+        {
+            await Navigation.PushAsync(new MainMenuPage());
+        }
     }
 }
