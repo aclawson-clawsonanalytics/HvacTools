@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace HvacTools.Mobile
+namespace HvacTools.Mobile.Pages
 {
     public partial class MainPage : ContentPage
     {
