@@ -19,17 +19,17 @@ namespace HvacTools.Mobile.Pages
 
         async void OnServiceRecordOptionSelected(object sender, EventArgs e)
         {
-            await DisplayAlert("Navigation!", "Service records selected...", "OK");
+            await Navigation.PushAsync(new ServiceRecordMainPage());
         }
 
         async void OnReferenceDocumentsOptionSelected(object sender, EventArgs e)
         {
-            await DisplayAlert("Navigation!", "Reference documents selected...", "OK");
+            await Navigation.PushAsync(new ReferenceDocumentMainPage());
         }
 
         async void OnCalculationsOptionSelected(object sender, EventArgs e)
         {
-            await DisplayAlert("Navigation!", "Calculations option selected...", "OK");
+            await Navigation.PushAsync(new CalculationsMainPage());
         }
     }
 }
