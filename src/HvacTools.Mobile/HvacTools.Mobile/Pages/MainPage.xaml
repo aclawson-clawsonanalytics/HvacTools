@@ -25,6 +25,12 @@
             BackgroundColor="Teal"
             BorderColor="Black"
             Clicked="OnStartClick"/>
+
+        <Label Text="Clawson Analytics, LLC"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center"
+            FontSize="Medium"
+            />
     </StackLayout>
     
 </ContentPage>
