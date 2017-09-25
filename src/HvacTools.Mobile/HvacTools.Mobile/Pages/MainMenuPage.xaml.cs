@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace HvacTools.Mobile.Pages
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainMenuPage : ContentPage
     {
-        public MainPage()
+        public MainMenuPage()
         {
             InitializeComponent();
-            
-        }
-
-        async void OnStartClick(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainMenuPage());
         }
     }
 }
