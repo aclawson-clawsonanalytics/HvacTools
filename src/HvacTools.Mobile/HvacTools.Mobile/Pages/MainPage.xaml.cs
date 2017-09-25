@@ -15,9 +15,9 @@ namespace HvacTools.Mobile
             
         }
 
-        async void OnStartClick()
+        async void OnStartClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainMenuPage());
+            await DisplayAlert("Alert", "The 'Start' button was clicked!", "OK");
         }
     }
 }
