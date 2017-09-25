@@ -1,10 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HvacTools.Mobile.Pages.MainMenuPage">
+             xmlns:local="clr-namespace:HvacTools.Mobile;assembly=HvacTools.Mobile"
+             x:Class="HvacTools.Mobile.Pages.MainMenuPage"
+             Title="Main Menu">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <Button
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="Center"
+            Text="Service Logs"
+            Font="Large"
+            HeightRequest="100"
+            WidthRequest="300"
+            BackgroundColor="Teal"
+            BorderColor="Black"
+            />
+
+            <Button
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            Text="Reference Documents"
+            Font="Large"
+            HeightRequest="100"
+            WidthRequest="300"
+            BackgroundColor="Blue"
+            BorderColor="Black"
+            />
+
+            <Button
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="Center"
+            Text="Calculations"
+            Font="Large"
+            HeightRequest="100"
+            WidthRequest="300"
+            BackgroundColor="Green"
+            BorderColor="Black"
+            />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

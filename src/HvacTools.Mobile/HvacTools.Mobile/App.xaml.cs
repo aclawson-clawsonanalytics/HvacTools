@@ -13,7 +13,7 @@ namespace HvacTools.Mobile
         {
             InitializeComponent();
             
-            MainPage = new HvacTools.Mobile.Pages.MainPage();
+            MainPage = new NavigationPage(new HvacTools.Mobile.Pages.MainPage());
         }
 
         protected override void OnStart()
