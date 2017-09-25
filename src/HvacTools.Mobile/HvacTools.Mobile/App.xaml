@@ -46,6 +46,11 @@
                 <Setter Property="BackgroundColor" Value="Red"/>
                 <Setter Property="BorderColor" Value="Black"/>
             </Style>
+            
+            <Style x:Key="FormTextInput" TargetType="Entry">
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="300"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

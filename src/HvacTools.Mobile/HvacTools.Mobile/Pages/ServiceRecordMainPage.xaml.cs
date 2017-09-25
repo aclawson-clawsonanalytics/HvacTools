@@ -20,6 +20,8 @@ namespace HvacTools.Mobile.Pages
         async void OnAddServiceRecord(object sender, EventArgs e)
         {
             ServiceRecordDetailModal modal = new ServiceRecordDetailModal();
+            Label prompt = modal.FindByName<Label>("ServiceRecordPrompt");
+            prompt.Text = "Add service record: ";
             await Navigation.PushModalAsync(modal);
         }
 	}

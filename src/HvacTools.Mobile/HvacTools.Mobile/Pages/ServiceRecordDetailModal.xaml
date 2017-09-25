@@ -5,10 +5,37 @@
              x:Class="HvacTools.Mobile.Pages.ServiceRecordDetailModal">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Label Text="Add Service Record" Style="{StaticResource InnerPageHeading}"/>
+            <Label x:Name="ServiceRecordPrompt" Style="{StaticResource InnerPageHeading}"/>
 
             <StackLayout Padding="100">
-                
+                <StackLayout>
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="Customer Name"
+                    />
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="Address Line 1"
+                    />
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="Address Line 2"
+                    />
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="City"
+                    />
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="State"
+                    />
+                    <Entry
+                        Style="{StaticResource FormTextInput}"
+                        Placeholder="Zip Code"
+                    />
+                    <Label Text="Description of work: "></Label>
+                    
+                </StackLayout>
             </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
                 <Button
@@ -20,6 +47,7 @@
                     HorizontalOptions="EndAndExpand"
                     Style="{StaticResource CancelButton}"
                     Text="Cancel"
+                    Clicked="DismissServiceRecordDetailModal"
                 />
             </StackLayout>
             

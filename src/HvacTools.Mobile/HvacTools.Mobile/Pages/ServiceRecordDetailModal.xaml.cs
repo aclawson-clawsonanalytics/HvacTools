@@ -16,5 +16,10 @@ namespace HvacTools.Mobile.Pages
 		{
 			InitializeComponent ();
 		}
+
+        async void DismissServiceRecordDetailModal(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
 	}
 }
