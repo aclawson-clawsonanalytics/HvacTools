@@ -9,10 +9,9 @@
         Padding="20,20,20,20"
         >
 
-        <Label Text="HVAC TOOLS" 
+        <Label Text="HVAC TOOLS"
+            Style="{StaticResource PageHeading}"
             VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center"
-            TextColor="Teal"
             FontSize="60"/>
 
         <Button

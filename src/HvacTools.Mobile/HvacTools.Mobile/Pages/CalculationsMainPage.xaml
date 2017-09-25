@@ -6,7 +6,7 @@
              Title="Calculations">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <Label Text="Calculations" Style="{StaticResource InnerPageHeading}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

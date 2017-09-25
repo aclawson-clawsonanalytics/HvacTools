@@ -5,6 +5,17 @@
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
-        
+        <ResourceDictionary>
+            <Style x:Key="PageHeading" TargetType="Label">
+                <Setter Property="TextColor" Value="Teal"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="InnerPageHeading" TargetType="Label">
+                <Setter Property="TextColor" Value="Teal"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

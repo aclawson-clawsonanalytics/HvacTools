@@ -6,7 +6,7 @@
              Title="Reference Documents">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+            <Label Text="Reference Documents" Style="{StaticResource InnerPageHeading}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
