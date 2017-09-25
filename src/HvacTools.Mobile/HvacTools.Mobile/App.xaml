@@ -16,6 +16,20 @@
                 <Setter Property="VerticalOptions" Value="Start"/>
                 <Setter Property="FontSize" Value="20"/>
             </Style>
+
+            <Style x:Key="ListViewHeading" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style x:Key="AddButton" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="Font" Value="Medium"/>
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="Text" Value="Add"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

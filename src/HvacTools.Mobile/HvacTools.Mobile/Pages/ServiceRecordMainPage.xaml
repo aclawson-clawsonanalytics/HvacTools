@@ -5,8 +5,17 @@
              x:Class="HvacTools.Mobile.Pages.ServiceRecordMainPage"
              Title="Service Records">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Orientation="Vertical">
             <Label Text="Service Records" Style="{StaticResource InnerPageHeading}"/>
+
+            <StackLayout>
+                
+                <Button
+                    Style="{StaticResource AddButton}"
+                />
+                <Label Text="Saved Records:" Style="{StaticResource ListViewHeading}"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
