@@ -9,7 +9,7 @@
             <Button
             VerticalOptions="StartAndExpand"
             HorizontalOptions="Center"
-            Text="Service Logs"
+            Text="Service Records"
             Font="Large"
             HeightRequest="100"
             WidthRequest="300"

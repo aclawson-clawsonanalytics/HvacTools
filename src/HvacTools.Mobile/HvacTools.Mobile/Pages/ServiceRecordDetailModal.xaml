@@ -37,6 +37,16 @@
                     
                 </StackLayout>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button
+                    Style="{StaticResource ConfirmButton}" 
+                    Text="Attachments"
+                />
+                <Button
+                    Style="{StaticResource ConfirmButton}"
+                    Text="Data"
+                />
+            </StackLayout>
             <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
                 <Button
                     HorizontalOptions="StartAndExpand"
