@@ -15,7 +15,7 @@
             WidthRequest="300"
             BackgroundColor="Teal"
             BorderColor="Black"
-            />
+            Clicked="OnServiceRecordOptionSelected"/>
 
             <Button
             VerticalOptions="CenterAndExpand"
@@ -26,7 +26,7 @@
             WidthRequest="300"
             BackgroundColor="Blue"
             BorderColor="Black"
-            />
+            Clicked="OnReferenceDocumentsOptionSelected"/>
 
             <Button
             VerticalOptions="EndAndExpand"
@@ -37,7 +37,7 @@
             WidthRequest="300"
             BackgroundColor="Green"
             BorderColor="Black"
-            />
+            Clicked="OnCalculationsOptionSelected"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
