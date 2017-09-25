@@ -12,6 +12,7 @@
                 
                 <Button
                     Style="{StaticResource AddButton}"
+                    Clicked="OnAddServiceRecord"
                 />
                 <Label Text="Saved Records:" Style="{StaticResource ListViewHeading}"/>
             </StackLayout>

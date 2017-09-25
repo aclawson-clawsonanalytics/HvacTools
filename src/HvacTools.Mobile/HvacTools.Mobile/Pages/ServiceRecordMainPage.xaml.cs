@@ -16,5 +16,11 @@ namespace HvacTools.Mobile.Pages
 		{
 			InitializeComponent ();
 		}
+
+        async void OnAddServiceRecord(object sender, EventArgs e)
+        {
+            ServiceRecordDetailModal modal = new ServiceRecordDetailModal();
+            await Navigation.PushModalAsync(modal);
+        }
 	}
 }

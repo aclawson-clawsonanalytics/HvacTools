@@ -30,6 +30,22 @@
                 <Setter Property="BorderColor" Value="Black"/>
                 <Setter Property="Text" Value="Add"/>
             </Style>
+
+            <Style x:Key="ConfirmButton" TargetType="Button">
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="Font" Value="Medium"/>
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
+
+            <Style x:Key="CancelButton" TargetType="Button">
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="Font" Value="Medium"/>
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="BorderColor" Value="Black"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

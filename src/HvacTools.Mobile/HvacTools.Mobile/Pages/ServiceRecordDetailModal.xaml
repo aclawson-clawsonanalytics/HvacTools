@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Add Service Record"
+             x:Class="HvacTools.Mobile.Pages.ServiceRecordDetailModal">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Add Service Record" Style="{StaticResource InnerPageHeading}"/>
+
+            <StackLayout Padding="100">
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                <Button
+                    HorizontalOptions="StartAndExpand"
+                    Style="{StaticResource ConfirmButton}"    
+                    Text="Save"
+                />
+                <Button
+                    HorizontalOptions="EndAndExpand"
+                    Style="{StaticResource CancelButton}"
+                    Text="Cancel"
+                />
+            </StackLayout>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

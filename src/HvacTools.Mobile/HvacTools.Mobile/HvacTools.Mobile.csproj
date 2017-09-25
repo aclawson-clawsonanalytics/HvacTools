@@ -50,6 +50,9 @@
     <Compile Include="Pages\ReferenceDocumentMainPage.xaml.cs">
       <DependentUpon>ReferenceDocumentMainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ServiceRecordDetailModal.xaml.cs">
+      <DependentUpon>ServiceRecordDetailModal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ServiceRecordMainPage.xaml.cs">
       <DependentUpon>ServiceRecordMainPage.xaml</DependentUpon>
     </Compile>
@@ -99,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\CalculationsMainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ServiceRecordDetailModal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
