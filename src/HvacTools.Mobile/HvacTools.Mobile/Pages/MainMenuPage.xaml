@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button
-            VerticalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
             Text="Service Records"
             Font="Large"
@@ -29,7 +29,7 @@
             Clicked="OnReferenceDocumentsOptionSelected"/>
 
             <Button
-            VerticalOptions="EndAndExpand"
+            VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
             Text="Calculations"
             Font="Large"

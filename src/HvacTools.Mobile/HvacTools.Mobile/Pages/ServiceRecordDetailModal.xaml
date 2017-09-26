@@ -7,7 +7,7 @@
         <StackLayout Orientation="Vertical">
             <Label x:Name="ServiceRecordPrompt" Style="{StaticResource InnerPageHeading}"/>
 
-            <StackLayout Padding="100">
+            <ScrollView Padding="100">
                 <StackLayout>
                     <Entry
                         Style="{StaticResource FormTextInput}"
@@ -34,9 +34,12 @@
                         Placeholder="Zip Code"
                     />
                     <Label Text="Description of work: "></Label>
-                    
+                    <Editor
+                        Style="DescriptionTextInput"
+                    />
+
                 </StackLayout>
-            </StackLayout>
+            </ScrollView>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button
                     Style="{StaticResource ConfirmButton}" 
