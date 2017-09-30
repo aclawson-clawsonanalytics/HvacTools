@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Microsoft.EntityFrameworkCore;
 using Xamarin.Forms;
+
+
 
 namespace HvacTools.Mobile
 {
@@ -11,6 +13,7 @@ namespace HvacTools.Mobile
     {
         public App()
         {
+            
             InitializeComponent();
             
             MainPage = new NavigationPage(new HvacTools.Mobile.Pages.MainPage());
