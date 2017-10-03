@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Xamarin.Forms;
 using Tools;
+using Tools.Models;
 
 
 namespace HvacTools.Mobile

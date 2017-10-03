@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Models", "Tools.Models\Tools.Models.csproj", "{6CADDF78-A857-4682-BBCB-F1B01B2E44B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Calculators.cs", "Tools.Calculators.cs\Tools.Calculators.cs.csproj", "{265BC0C4-912F-4213-A4DA-7B47C535D604}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Calculators", "Tools.Calculators.cs\Tools.Calculators.csproj", "{265BC0C4-912F-4213-A4DA-7B47C535D604}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

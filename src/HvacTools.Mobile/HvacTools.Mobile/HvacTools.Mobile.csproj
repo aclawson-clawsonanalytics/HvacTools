@@ -116,6 +116,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Tools.Calculators.cs\Tools.Calculators.csproj">
+      <Project>{265bc0c4-912f-4213-a4da-7b47c535d604}</Project>
+      <Name>Tools.Calculators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Tools.Models\Tools.Models.csproj">
+      <Project>{6caddf78-a857-4682-bbcb-f1b01b2e44b4}</Project>
+      <Name>Tools.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Tools\Tools.csproj">
       <Project>{26b87eb7-f116-4c91-9941-ef9947a92654}</Project>
       <Name>Tools</Name>
