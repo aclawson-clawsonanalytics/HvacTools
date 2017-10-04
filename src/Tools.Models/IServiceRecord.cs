@@ -8,7 +8,8 @@ namespace Tools.Models
     {
         int Id { get; set; }
         int LocationId { get; set; }
+        string CustomerName { get; set; }
+        string Description { get; set; }
 
-        ILocation Location { get; set; }
     }
 }

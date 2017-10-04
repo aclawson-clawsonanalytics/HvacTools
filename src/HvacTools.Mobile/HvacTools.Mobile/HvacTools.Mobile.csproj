@@ -15,5 +15,8 @@
       <Reference Include="Microsoft.EntityFrameworkCore">
         <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.2.0.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
       </Reference>
+      <Reference Include="System.ComponentModel.Annotations">
+        <HintPath>..\..\packages\System.ComponentModel.Annotations.4.4.0\lib\netstandard2.0\System.ComponentModel.Annotations.dll</HintPath>
+      </Reference>
     </ItemGroup>
 </Project>

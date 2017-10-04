@@ -12,7 +12,7 @@ namespace HvacTools.Mobile.Database
     {
         #region Member Variables
         private string databasePath { get; set; }
-        public DbSet<ILocation> Locations { get; set; }
+        public DbSet<Location> Locations { get; set; }
         public DbSet<IServiceRecord> ServiceRecords { get; set; }
 
         #endregion
