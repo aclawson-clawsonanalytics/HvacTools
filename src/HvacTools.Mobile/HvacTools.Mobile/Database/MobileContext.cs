@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Tools.Models;
+using HvacTools.Mobile.Models;
 
 namespace HvacTools.Mobile.Database
 {
