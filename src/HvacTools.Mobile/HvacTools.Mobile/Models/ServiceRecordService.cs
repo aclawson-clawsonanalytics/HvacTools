@@ -18,8 +18,8 @@ namespace HvacTools.Mobile.Models
             if (mobileContext == null)
             {
                 throw new ArgumentNullException("Null mobile context.");
-                _mobileContext = mobileContext;
             }
+            _mobileContext = mobileContext;
         }
 
         public IEnumerable<ServiceRecord> GetAllServiceRecords()
