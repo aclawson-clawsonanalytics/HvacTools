@@ -22,7 +22,11 @@ namespace HvacTools.Mobile
                         
             InitializeComponent();
             ApplicationContext = new MobileContext(pathManager.ApplicationDatabasePath);
+            ReferenceContext = new MobileReferenceContext(pathManager.ReferenceDatabasePath);
+            
             ApplicationContext.Database.EnsureCreated();
+            ReferenceContext.Database.EnsureCreated();
+            
             MainPage = new NavigationPage(new HvacTools.Mobile.Pages.MainPage());
         }
 

@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 using Tools.Models;
 
 namespace HvacTools.Mobile.Models
 {
-    [Table("states")]
-    public class State : IState
+    [Table("refrigerants")]
+    public class Refrigerant : IRefrigerant
     {
-        #region Member Variables
-        [Column("pk_state_id"), Key]
+        [Column("pk_refrigerantId"), Key]
         public int Id { get; set; }
+
         [Column("name")]
         public string Name { get; set; }
-        #endregion
     }
 }

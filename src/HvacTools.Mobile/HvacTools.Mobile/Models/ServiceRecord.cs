@@ -13,10 +13,13 @@ namespace HvacTools.Mobile.Models
         [Column("pk_service_record_id")]
         public int Id { get; set; }
 
+        [Column("fk_location_id"), ForeignKey("service_records_fk01")]
         public int LocationId { get; set; }
          
+        [Column("customer_name")]
         public string CustomerName { get; set; }
 
+        [Column("description")]
         public string Description { get; set; }
         #endregion
 
