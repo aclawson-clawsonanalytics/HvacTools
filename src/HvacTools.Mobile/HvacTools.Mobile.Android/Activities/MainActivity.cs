@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using HvacTools.Mobile.Droid.Device;
 
 namespace HvacTools.Mobile.Droid
 {
@@ -20,7 +21,8 @@ namespace HvacTools.Mobile.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            PathManager pathManager = new PathManager();
+            LoadApplication(new App(pathManager));
         }
     }
 }

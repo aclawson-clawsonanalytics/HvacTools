@@ -1,40 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Tools.Models;
 using HvacTools.Mobile.Models;
+
 
 namespace HvacTools.Mobile.Database
 {
-    public class MobileContext : DbContext
+    public class MobileReferenceContext : DbContext
     {
         #region Member Variables
         private string SqlitePath { get; set; }
-        public DbSet<Location> Locations { get; set; }
-        public DbSet<ServiceRecord> ServiceRecords { get; set; }
+        DbSet<State> States { get; set; }
+        DbSet<Refrigerant> Refrigerants { get; set; }
 
         #endregion
 
         #region Constructor(s)
-        public MobileContext(string sqliteDbPath)
+        public MobileReferenceContext(string dbPath)
         {
-            SqlitePath = sqliteDbPath;
+            if (dbPath == null || dbPath == string.Empty)
+                throw new Exception("Invalid sqlite database path.");
+
+            SqlitePath = dbPath;
         }
         #endregion
 
-        #region Class Methods
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // use Sqlite Extensions here.
             optionsBuilder.UseSqlite($"Filename={SqlitePath}");
         }
-        #endregion
-
+        
 
     }
-
-    
 }

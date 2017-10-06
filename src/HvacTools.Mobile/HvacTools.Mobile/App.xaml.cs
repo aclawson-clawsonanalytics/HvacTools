@@ -6,16 +6,26 @@ using Microsoft.EntityFrameworkCore;
 using Xamarin.Forms;
 using Tools;
 using Tools.Models;
+using HvacTools.Mobile.Device;
+using HvacTools.Mobile.Database;
 
 
 namespace HvacTools.Mobile
 {
     public partial class App : Application
     {
-        public App()
+        MobileContext ApplicationContext { get; set; }
+        MobileReferenceContext ReferenceContext { get; set; }
+
+        public App(IPathManager pathManager)
         {
-            
+                        
             InitializeComponent();
+            ApplicationContext = new MobileContext(pathManager.ApplicationDatabasePath);
+            ReferenceContext = new MobileReferenceContext(pathManager.ReferenceDatabasePath);
+            
+            ApplicationContext.Database.EnsureCreated();
+            ReferenceContext.Database.EnsureCreated();
             
             MainPage = new NavigationPage(new HvacTools.Mobile.Pages.MainPage());
         }
