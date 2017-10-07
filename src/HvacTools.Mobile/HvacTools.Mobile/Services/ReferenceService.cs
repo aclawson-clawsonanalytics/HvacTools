@@ -9,7 +9,7 @@ namespace HvacTools.Mobile.Services
     public class ReferenceService
     {
         #region Member Variables
-        public MobileReferenceContext _referenceContext {get;set }
+        public MobileReferenceContext _referenceContext { get; set; }
         #endregion
 
         #region Constructor(s)
