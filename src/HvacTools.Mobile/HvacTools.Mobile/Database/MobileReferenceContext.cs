@@ -11,8 +11,8 @@ namespace HvacTools.Mobile.Database
     {
         #region Member Variables
         private string SqlitePath { get; set; }
-        DbSet<State> States { get; set; }
-        DbSet<Refrigerant> Refrigerants { get; set; }
+        public DbSet<State> States { get; set; }
+        public DbSet<Refrigerant> Refrigerants { get; set; }
 
         #endregion
 
