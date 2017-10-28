@@ -1,0 +1,1 @@
+INSERT INTO states (pk_state_id, name, code) VALUES (1, 'Alabama', 'AL');
