@@ -56,7 +56,7 @@ dlldata.c
 # DNX
 project.lock.json
 artifacts/
-
+Data/ReferenceData/SQLite/*
 *_i.c
 *_p.c
 *_i.h
