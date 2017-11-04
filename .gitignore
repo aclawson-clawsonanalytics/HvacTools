@@ -257,3 +257,4 @@ _Pvt_Extensions
 /etc/bcp/sde.COUNTY_ESRI_WGS84.dat
 /etc/bcp/core.location_cooccurrence.dat
 /etc/bcp/core.locations_x_use_sites.dat
+Data/ReferenceData/SQLite/V_1/hvac_reference_1.db
