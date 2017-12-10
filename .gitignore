@@ -258,3 +258,4 @@ _Pvt_Extensions
 /etc/bcp/core.location_cooccurrence.dat
 /etc/bcp/core.locations_x_use_sites.dat
 Data/ReferenceData/SQLite/V_1/hvac_reference_1.db
+ReferenceData/Versions/hvac_reference_v1.db
