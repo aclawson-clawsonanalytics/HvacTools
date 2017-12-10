@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HvacTools.Mobile": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Debug": "True"
+      }
+    }
+  }
+}
