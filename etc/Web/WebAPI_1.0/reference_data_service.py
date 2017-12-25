@@ -3,20 +3,26 @@ import os
 import sys
 
 REFERENCE_DATA_DIR = os.path.join(os.getcwd(), "ReferenceData")
-VERSION_DIR = os.path.join(REFERENCE_DATA_DIR, "Versions")
+VERSIONS_DIR = os.path.join(REFERENCE_DATA_DIR, "Versions")
+
+
 
 app = Bottle()
 @app.route('/hello')
 def hello():
     return "Running Hvac Tools Web Service...."
 
-@app.route('/HvacReference/<version>')
-def getReferenceDatabaseByVersion(version):
-    dbFilename = "hvac_reference_v" + str(version) + ".db"
-    
-    dbPath = os.path.join(VERSION_DIR, dbFilename)
+@app.route('/info')
+def info():    
+    return 'Running HvacTools reference database web service. Database version: {}. Migration Number: {}'.format(1,1)
+
+@app.route('/HvacReference/<version>/<migration_number>')
+def getReferenceDatabaseByVersion(version, migration_number):
+    dbFilename = "hvac_reference_" + str(version) + ".db"
+    versionDirectory = os.path.join(VERSIONS_DIR, str(version))
+    dbPath = os.path.join(versionDirectory, dbFilename)    
     if (os.path.exists(dbPath)):
-        rootPath = os.path.join("/", VERSION_DIR)
+        rootPath = os.path.join("/", versionDirectory)
         return static_file(dbFilename, root=rootPath, download=dbFilename)
     else:
         return "No file found at: " + dbPath 
