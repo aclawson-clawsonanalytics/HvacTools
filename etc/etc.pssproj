@@ -27,6 +27,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Build\" />
+    <Folder Include="SQL\" />
+    <Folder Include="SQL\ReferenceDb\" />
+    <Folder Include="SQL\ReferenceDb\Data\" />
+    <Folder Include="SQL\ReferenceDb\Tables\" />
     <Folder Include="Web\" />
     <Folder Include="Web\WebAPI_1.0\" />
   </ItemGroup>
@@ -34,6 +38,14 @@
     <Compile Include="start_web_service.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="SQL\ReferenceDb\Data\states.sql" />
+    <None Include="SQL\ReferenceDb\Tables\states.sql" />
+    <Content Include="SQL\ReferenceDb\Data\refrigerants.sql" />
+    <Content Include="SQL\ReferenceDb\Data\refrigerant_types.sql" />
+    <Content Include="SQL\ReferenceDb\Tables\migrations.sql" />
+    <Content Include="SQL\ReferenceDb\Tables\refrigerants.sql" />
+    <Content Include="SQL\ReferenceDb\Tables\refrigerant_types.sql" />
+    <Content Include="SQL\ReferenceDb\Tables\versions.sql" />
     <Content Include="Web\WebAPI_1.0\bottle.py" />
     <Content Include="Web\WebAPI_1.0\reference_data_service.py" />
   </ItemGroup>
