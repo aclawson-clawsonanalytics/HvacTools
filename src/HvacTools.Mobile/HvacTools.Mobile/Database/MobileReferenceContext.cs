@@ -13,6 +13,7 @@ namespace HvacTools.Mobile.Database
         private string SqlitePath { get; set; }
         public DbSet<State> States { get; set; }
         public DbSet<Refrigerant> Refrigerants { get; set; }
+        public DbSet<RefrigerantType> RefrigerantTypes { get; set; }
 
         #endregion
 
