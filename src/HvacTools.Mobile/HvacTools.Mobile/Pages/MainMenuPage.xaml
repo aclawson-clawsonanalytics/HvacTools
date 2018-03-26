@@ -5,7 +5,35 @@
              x:Class="HvacTools.Mobile.Pages.MainMenuPage"
              Title="Main Menu">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid BackgroundColor="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Image Source="bg.png" Aspect="AspectFill" />
+                <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    
+                    <Label Text="Hvac.IO" TextColor="Gray" FontSize="Large" />
+                </StackLayout>
+            </Grid>
+            <StackLayout Margin="20,20,20,0" Grid.Row="1" Spacing="15">
+                <Button
+                    Text="Service Records"
+                    Clicked="OnServiceRecordOptionSelected"
+                    />
+
+                <Button
+                    Text="Reference Documentation"
+                    />
+                <Button
+                    Text="Calculations"
+                    />
+                <ContentView HeightRequest="1" BackgroundColor="Gray" />
+                
+            </StackLayout>
+        </Grid>
+        <!--<StackLayout>
             <Button
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
@@ -38,6 +66,6 @@
             BackgroundColor="Green"
             BorderColor="Black"
             Clicked="OnCalculationsOptionSelected"/>
-        </StackLayout>
+        </StackLayout>-->
     </ContentPage.Content>
 </ContentPage>

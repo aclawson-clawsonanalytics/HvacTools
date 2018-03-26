@@ -8,6 +8,7 @@ using Tools;
 using Tools.Models;
 using HvacTools.Mobile.Device;
 using HvacTools.Mobile.Database;
+using HvacTools.Mobile.Pages;
 
 
 namespace HvacTools.Mobile
@@ -26,8 +27,12 @@ namespace HvacTools.Mobile
             
             ApplicationContext.Database.EnsureCreated();
             ReferenceContext.Database.EnsureCreated();
-            
-            MainPage = new NavigationPage(new HvacTools.Mobile.Pages.MainPage());
+
+            MainPage = new MasterDetailPage()
+            {
+                Master = new MainMenuPage() { Title = "Welcome!" },
+                Detail = new NavigationPage(new MainLandingPage())
+            };
         }
 
         protected override void OnStart()

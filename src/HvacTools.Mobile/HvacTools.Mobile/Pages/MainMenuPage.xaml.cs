@@ -12,24 +12,30 @@ namespace HvacTools.Mobile.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenuPage : ContentPage
     {
+        #region Member Variables        
+        #endregion
         public MainMenuPage()
         {
             InitializeComponent();
         }
 
-        async void OnServiceRecordOptionSelected(object sender, EventArgs e)
+        public void OnServiceRecordOptionSelected(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ServiceRecordMainPage());
+            //await Navigation.PushAsync(new ServiceRecordMainPage());
+            MasterDetailPage mdp = Application.Current.MainPage as MasterDetailPage;
+            mdp.Detail = new ServiceRecordMainPage();
         }
 
-        async void OnReferenceDocumentsOptionSelected(object sender, EventArgs e)
+        public void OnReferenceDocumentsOptionSelected(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ReferenceDocumentMainPage());
+            var mdp = Application.Current.MainPage as MasterDetailPage;
+            mdp.Detail = new ReferenceDocumentMainPage();         
         }
 
-        async void OnCalculationsOptionSelected(object sender, EventArgs e)
+        public void OnCalculationsOptionSelected(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CalculationsMainPage());
+            var mdp = Application.Current.MainPage as MasterDetailPage;
+            mdp.Detail = new CalculationsMainPage();
         }
     }
 }
